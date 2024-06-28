@@ -1,1 +1,11 @@
-
+name: UI-licious Test Runner
+on: [push]
+jobs:
+	Explore-GitHub-Actions:
+		runs-on: ubuntu-latest
+		steps:
+		uses: omairvaiyani/ghact-uilicious@v1.1.1
+		with:
+			access-key: [REDACTED]
+			project: My First Project
+			tests: myfirstTest
